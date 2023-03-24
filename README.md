@@ -1,7 +1,7 @@
 # bug-bounty-tutorial
 bug bounty tutorial
 
-## 3.intro bug bounty
+## 3.dvwa file upload high
 ```
 apt-get install exiftools
 
