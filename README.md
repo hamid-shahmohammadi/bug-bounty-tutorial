@@ -17,3 +17,8 @@ webup
 ```
 </select><image src/onerror=alert(1)>
 ```
+
+### high
+```
+#?default=English<script>alert(1)</script>
+```
