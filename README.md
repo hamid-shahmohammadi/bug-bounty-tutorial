@@ -29,3 +29,5 @@ python3 -m http.server 3000
 <a onclick="alert(1)" style=display:block>test</a>
 <a onclick="alert(document.cookie)" style=display:block>test</a>
 ```
+
+### imposible
