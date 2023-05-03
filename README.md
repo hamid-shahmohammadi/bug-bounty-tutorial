@@ -12,3 +12,10 @@ md5(rot13("success"))
 ```
 
 ## burp suite change token for success
+
+## high
+```
+token_part_1("ABCD", 44);
+token_part_2("XX");
+token_part_3(null,"ZZ")
+```
